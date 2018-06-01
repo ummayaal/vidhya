@@ -1,0 +1,452 @@
+<html lang="en">
+
+<head>
+    <title>sample2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url(post_11.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            margin-top: 0%;
+        }
+        
+        .navbar-default {
+            background-color: transparent;
+            box-shadow: none;
+            border-color: transparent;
+            background-image: none;
+            color: white;
+        }
+        
+        .navbar-brand {
+            color: white;
+            font-family: bold;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 170%;
+        }
+        
+        nav {
+            color: white;
+            margin: 35px;
+        }
+        
+        li a:hover {
+            font-weight: bold;
+            color: white;
+        }
+        
+        .ummayaal {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 100%;
+            color: grey;
+        }
+        
+        .button {
+            background-color: grey;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            size: 5%;
+        }
+        
+        .button4 {
+            border-radius: 100px;
+            size: 10%;
+        }
+        
+        .para {
+            font-size: 40px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .papa {
+            margin: 5%;
+        }
+        
+        #icon {
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            background-position: 2px 3px;
+        }
+        
+        .column {
+            margin-right: 1%;
+            margin-bottom: 0%;
+        }
+        
+        #wrapper .text {
+            position: relative;
+            text-align: center;
+            visibility: hidden;
+        }
+        
+        #wrapper:hover .text {
+            visibility: visible;
+        }
+        
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .col-xs-3:hover .image {
+            opacity: 0.3;
+        }
+        
+        .col-xs-3:hover .middle {
+            opacity: 1;
+        }
+        
+        .text {
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+        
+        .button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+        
+        .ummayaall {
+            border: 5px;
+            border-radius: 12px;
+            margin: 1em 0;
+            background-color: gray;
+        }
+        
+        #container {
+            width: 70%;
+            height: 100%;
+        }
+        
+        #first {
+            width: 70%;
+            float: left;
+            height: 100%;
+        }
+        
+        #second {
+            width: 30%;
+            float: left;
+            height: 100%;
+        }
+        
+        #clear {
+            clear: both;
+        }
+        
+        .bus {
+            width: 70%;
+            height: 50%;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+        
+        .secound {
+            color: grey;
+            font-size: 10px;
+        }
+        
+        .ima {
+            border-radius: 10px;
+        }
+        
+        .paa {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .secc {
+            width: 35%;
+            height: 45%;
+            margin-top: 5px;
+            float: left;
+        }
+        
+        .seccc {
+            width: 35%;
+            height: 45%;
+            margin-left: 50px;
+            margin-top: 5px;
+            float: left;
+        }
+        
+        .buss {
+            width: 70%;
+            height: 50%;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+        
+        .ba {
+            margin-left: -95px;
+        }
+        
+        .baa {
+            margin-left: -95px;
+        }
+        
+        #main {
+            width: 30%;
+            float: right;
+            height: 200%;
+        }
+        
+        .news {
+            margin-left: 10px
+        }
+        
+        .new {
+            width: 46%;
+            height: 100%;
+            margin-top: 0px;
+            float: left;
+        }
+        
+        .ne {
+            width: 35%;
+            height: 45%;
+            margin-left: 40px;
+            margin-top: 5px;
+            float: left;
+        }
+        
+        .buk {
+            width: 70%;
+            height: 10%;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+        
+        .centered {
+            position: absolute;
+            top: 30%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        
+        .imaa {
+            border-radius: 15px;
+        }
+        
+        .paaa {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        .poto {
+            width: "150%";
+            height: "30%";
+            margin-top: 100px;
+        }
+        
+        .lap {
+            width: "150%";
+            height: "30%";
+            margin-top: 30px;
+        }
+        
+        p:hover {
+            color: grey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="color: white">AVISION</a>
+
+            </div>
+
+            <ul class="nav navbar-nav" style="color: white">&emsp;&emsp;&emsp;
+                <li class="ummayaal"><a href="#" style="color: white">Home </a></li>&emsp;&emsp;
+                <li class="ummayaal"><a href="#" style="color: white">fasion</a></li>&emsp;&emsp;&emsp;
+                <li class="ummayaal"><a href="#" style="color: white">gadgets</a></li>&emsp;&emsp;&emsp;
+                <li class="ummayaal"><a href="#" style="color: white">lifestyle</a></li>&emsp;&emsp;&emsp;
+                <li class="ummayaal"><a href="#" style="color: white">video</a></li>&emsp;&emsp;&emsp;
+                <li class="ummayaal"><a href="#" style="color: white">contact</a></li>&emsp;&emsp;&emsp;
+                <li style="float:right ">
+                    <div class="search">
+                        <span class="fa fa-search"></span>
+                        <input placeholder="Search term">
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="papa">
+        <button class="button button4" style="size:50%">SPORT</button>
+        <p class="para">How Did Van Gogh's<br>Turbulent Mind Depict<br> One Of The Most Complex<br>Concepts In Physics?</p>
+    </div>
+
+    <div class="col-xs-12">
+        <div class="col-xs-3"><a><button class="btn btn-primary btn-lg" style="background-color:lightgrey;color: black;" type="submit">how did van Gogh's<br> turbulent mind depict one<br> of the most </button></a></div>
+        <div class="col-xs-3"><a><button class="btn btn-primary btn-lg" style="background-color:lightgrey;color: black;" type="submit">how did van Gogh's<br> turbulent mind depict one<br> of the most </button></a></div>
+        <div class="col-xs-3"><a><button class="btn btn-primary btn-lg" style="background-color:lightgrey;color: black;" type="submit">how did van Gogh's<br> turbulent mind depict one<br> of the most </button></a></div>
+        <div class="col-xs-3">
+            <img src="666.jpg" style="width:100%; height:250px;">
+            <div class="middle">
+                <div class="text">how did van Gogh's<br> turbulent mind depict one<br> of the most</div>
+            </div>
+        </div>
+    </div>
+    <section style="margin-top: 20px;">
+        <nav class="navbar navbar-default" style="margin-top: 50px;">
+            <div class="container-fluid" style="margin-top: 50px; ">
+                <div class="navbar-header ">
+                    <a class="navbar-brand " href="# " style="color:black;text-decoration-line: underline ;margin: 1em 0;">
+                        <bold>don't miss</bold>
+                    </a>
+
+                </div>
+
+                <ul class="nav navbar-nav " style="color: white ">&emsp;&emsp;&emsp;
+                    <li class="ummayaall "><a href="# " style="color:darkgrey ">all</a></li>&emsp;&emsp;
+                    <li class="ummayaall "><a href="# " style="color:darkgrey ">style hunter</a></li>&emsp;&emsp;&emsp;
+                    <li class="ummayaall "><a href="# " style="color:darkgray ">vogue</a></li>&emsp;&emsp;&emsp;
+                    <li class="ummayaall"><a href="# " style="color:darkgray ">health & fitness</a></li>&emsp;&emsp;&emsp;
+                    <li class="ummayaall"><a href="# " style="color:darkgrey ">travel</a></li>&emsp;&emsp;&emsp;
+                    <li class="ummayaall "><a href="# " style="color: darkgrey ">more</a></li>&emsp;&emsp;&emsp;
+                </ul>
+
+            </div>
+
+        </nav>
+        <div id="main">
+            <h1 class="news"> top sories</h1>
+            <div class="buk">
+                <div class="new">
+                    <img src="top_1.jpg" class="imaa" width="100%" height="100%"> <br>
+                </div>
+                <div class="ne">
+
+                    <p class="paaa">How Did van Gogh’s Turbulent Mind </p>
+                    <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                </div>
+            </div>
+            <div class="buk">
+                <div class="new">
+                    <img src="top_2.jpg" class="imaa" width="100%" height="100%"> <br>
+                </div>
+                <div class="ne">
+
+                    <p class="paaa">How Did van Gogh’s Turbulent Mind </p>
+                    <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                </div>
+            </div>
+            <div class="buk">
+                <div class="new">
+                    <img src="top_3.jpg" class="imaa" width="100%" height="100%"> <br>
+                </div>
+                <div class="ne">
+
+                    <p class="paaa">How Did van Gogh’s Turbulent Mind </p>
+                    <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                </div>
+            </div>
+            <div class="buk">
+                <div class="new">
+                    <img src="top_4.jpg" class="imaa" width="100%" height="100%"> <br>
+                </div>
+                <div class="ne">
+
+                    <p class="paaa">How Did van Gogh’s Turbulent Mind </p>
+                    <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+
+                </div>
+                <div class="lap">
+                    <img src="post_17.jpg" class="poto" width="100%" height="200%">
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div id="container">
+                <div id="first">
+                    <div class="bus">
+                        <img src="post_16.jpg" class="ima" width="100%" height="50%"> <br><br>
+                        <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                        <p class="secound"> Pick the yellow peach that looks like a sunset with its red, orange, and <br>pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
+                        <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                    </div>
+                    <div class="buss">
+                        <div class="secc">
+                            <img src="post_15.jpg" class="ima" width="130%" height="70%"> <br><br>
+                            <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                            <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                        </div>
+                        <div class="seccc">
+                            <img src="post_12.jpg" class="ima" width="130%" height="60%"> <br><br>
+                            <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                            <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="second">
+                    <div class="ba">
+                        <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                        <p class="secound">Katy LiuSep 29, 2017 at 9:48 am</p>
+                    </div><br>
+                    <div class="baa">
+                        <img src="bg.jpg" class="ima" height="30%"> <br>
+                        <div class="centered">How Did van Gogh’s <br>Turbulent Mind Depict One <br>of the Most Complex Concepts<br> in Physics?</div>
+                    </div><br>
+                    <div class="ba">
+                        <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                    </div><br>
+                    <div class="ba">
+                        <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                    </div><br>
+                    <div class="ba">
+                        <p class="paa">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</p>
+                    </div><br>
+                </div>
+                <div id="clear"></div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    </body>
+
+</html>
